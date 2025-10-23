@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🔥 SOLO LEVELING | DINUKA SHEHAN PROFILE</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #e2e8f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background: #0b0c17;
+  }
+
+  /* Video Background */
+  #bgVideo {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -3;
+    filter: brightness(0.45) contrast(1.2);
+    animation: bgPulse 12s ease-in-out infinite alternate;
+  }
+  #overlay {
+    position: fixed; top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(6px);
+    z-index: -2;
+    animation: overlayShift 18s ease-in-out infinite alternate;
+  }
+  @keyframes bgPulse {
+    0% { transform: scale(1) rotate(0deg); filter: brightness(0.45) contrast(1.2); }
+    50% { transform: scale(1.05) rotate(0.2deg); filter: brightness(0.55) contrast(1.3); }
+    100% { transform: scale(1) rotate(-0.2deg); filter: brightness(0.45) contrast(1.2); }
+  }
+  @keyframes overlayShift { 0% { background: rgba(0,0,0,0.65); } 50% { background: rgba(0,0,0,0.55); } 100% { background: rgba(0,0,0,0.65); } }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-bottom: 2px solid #00ffc3;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(14px);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: conic-gradient(from 0deg, #00ffc3, #7dd3fc, #fbbf24, #f59e0b, #00ffc3);
+    animation: rotateHeader 20s linear infinite;
+    filter: blur(120px);
+    opacity: 0.15;
+    z-index: 0;
+  }
+  @keyframes rotateHeader { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    color: #00ffc3;
+    text-shadow: 0 0 20px #00ffc3, 0 0 35px #0ff, 0 0 55px #7dd3fc;
+    animation: glowScale 2s ease-in-out infinite alternate;
+    position: relative; z-index: 1;
+  }
+  header p {
+    font-size: 1em;
+    font-weight: 500;
+    background: linear-gradient(90deg, #00ffc3, #7dd3fc, #fbbf24, #f59e0b);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientGlow 5s ease-in-out infinite alternate;
+    margin-top: 8px;
+    position: relative;
+  }
+  @keyframes glowScale {
+    0% { text-shadow: 0 0 12px #00ffc3, 0 0 25px #0ff; transform: scale(1); }
+    50% { text-shadow: 0 0 32px #00ffc3, 0 0 50px #7dd3fc; transform: scale(1.05); }
+    100% { text-shadow: 0 0 22px #00ffcc, 0 0 42px #f59e0b; transform: scale(1); }
+  }
+  @keyframes gradientGlow {
+    0% { background-position: 0% 50%; filter: drop-shadow(0 0 6px #00ffc3); }
+    50% { background-position: 100% 50%; filter: drop-shadow(0 0 18px #fbbf24); }
+    100% { background-position: 0% 50%; filter: drop-shadow(0 0 6px #00ffc3); }
+  }
+
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: rgba(10,12,25,0.85);
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(0,255,200,0.35), 0 0 120px rgba(0,255,255,0.2) inset;
+    padding: 30px;
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(0,255,200,0.15);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+  }
+  .container::before {
+    content:''; position:absolute; width:400px; height:400px; top:-50px; right:-50px;
+    background: radial-gradient(circle, rgba(0,255,200,0.3), transparent 70%);
+    filter: blur(100px);
+    animation: pulseOrb 8s ease-in-out infinite alternate;
+    z-index:0;
+  }
+  @keyframes pulseOrb { 0% { transform: scale(0.9); opacity:0.7; } 50% { transform: scale(1.1); opacity:1; } 100% { transform: scale(0.95); opacity:0.8; } }
+
+  h2 { margin-top: 20px; color: #7dd3fc; border-bottom: 1px solid #334155; padding-bottom: 6px; font-weight: 600; letter-spacing: 0.8px; font-size:1.1em; }
+
+  .display-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #facc15;
+    text-shadow: 0 0 20px #facc15, 0 0 40px #ffec99, 0 0 60px #fbbf24;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    animation: namePulse 3s ease-in-out infinite alternate;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  @keyframes namePulse {
+    0% { transform: scale(1); text-shadow: 0 0 20px #facc15, 0 0 40px #ffec99, 0 0 60px #fbbf24; }
+    50% { transform: scale(1.05); text-shadow: 0 0 30px #facc15, 0 0 55px #ffec99, 0 0 90px #fbbf24; }
+    100% { transform: scale(1); text-shadow: 0 0 20px #facc15, 0 0 40px #ffec99, 0 0 60px #fbbf24; }
+  }
+
+  /* Left stats column */
+  .stats-column { flex: 1; min-width: 300px; z-index: 1; }
+
+  /* Right tasks column */
+  .tasks-column { flex: 1; min-width: 300px; z-index: 1; }
+
+  .task-section { margin-top: 10px; display:flex; flex-direction:column; gap:10px; }
+  .task { font-size:0.9em; background: rgba(51, 65, 85, 0.35); padding: 10px 14px; border-radius: 12px;
+    cursor: pointer; display: flex; justify-content: space-between; align-items:center; box-shadow: 0 0 8px rgba(0,255,200,0.1); transition: all 0.18s cubic-bezier(.16,.99,.37,1);
+  }
+  .task:active{ transform: scale(0.98); }
+  .task:hover { transform: scale(1.04); background: rgba(255,255,255,0.06); box-shadow: 0 0 18px rgba(0,255,200,0.3); }
+  .task span { color:#4ade80; font-weight:600; font-size:0.85em; text-shadow: 0 0 4px #4ade80; }
+
+  .info { display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap:10px; }
+  .stat-pill { min-width:140px; padding:10px 14px; border-radius:14px; background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 6px 20px rgba(2,6,23,0.6), 0 0 12px rgba(0,255,200,0.25) inset; display:inline-flex; flex-direction:column; align-items:center;
+    justify-content:center; gap:4px; backdrop-filter:blur(8px); transition:all 0.3s ease-in-out; position:relative;
+  }
+  .stat-pill .stat-label { font-size:0.75rem; color:#9fb4c8; font-weight:600; z-index:1; }
+  .stat-pill div:last-child { font-family:'Orbitron', sans-serif; font-size:1.2rem; color:#fff; text-shadow:0 0 10px #00ffc3; z-index:1; transition: transform 0.35s ease, text-shadow 0.35s ease; }
+
+  /* Add "changed" style */
+  .changed {
+    transform: scale(1.18) !important;
+    text-shadow: 0 0 26px #00ffc3, 0 0 56px #7dd3fc !important;
+  }
+
+  .xp-bar-container { position: relative; margin: 18px 0; height:36px; background: linear-gradient(90deg,#111827,#1e293b); border-radius:28px; overflow:hidden; box-shadow: inset 0 0 12px rgba(0,255,200,0.35); }
+  .xp-bar { height:100%; width:0%; background:linear-gradient(90deg,#fbbf24,#f59e0b,#fbbf24); border-radius:28px; box-shadow:0 0 12px rgba(255,200,0,0.5); transition:width 600ms cubic-bezier(.16,.99,.37,1); }
+  .level-indicator { position:absolute; top:50%; font-family:'Orbitron',sans-serif; font-size:1.6em; color:gold; text-shadow:0 0 12px #fff; pointer-events:none; transform:translateY(-50%); transition: left 600ms cubic-bezier(.16,.99,.37,1), transform 200ms ease; }
+
+  button { font-weight:600; padding:10px 18px; border-radius:12px; border:none; cursor:pointer; margin:6px; font-size:0.95em;
+    color:white; background: linear-gradient(90deg,#0ea5e9,#3b82f6,#0ea5e9); box-shadow:0 0 10px rgba(14,165,233,0.6); transition:all 0.3s ease-in-out; }
+  button:hover { transform:scale(1.05); box-shadow:0 0 24px rgba(14,165,233,1); }
+
+  .rank-display { font-size:1.2em; text-shadow:0 0 10px #facc15; }
+  .next-rank { font-size:1em; text-shadow:0 0 6px #38bdf8; }
+  .footer { text-align:center; margin-top:20px; color:#94a3b8; font-size:0.9em; }
+
+  /* ---------------------------
+     LEVEL-UP COMBO ANIMATION
+     (Option 4: Flash + Wave + Aura)
+     --------------------------- */
+  .levelup-overlay {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+  }
+  .levelup-overlay.active { display: block; }
+
+  /* Quick flash */
+  .lvl-flash {
+    position: absolute; inset:0;
+    background: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.12), rgba(255,255,255,0.02) 25%, transparent 45%);
+    opacity: 0;
+    animation: flashPulse 480ms ease-out forwards;
+    mix-blend-mode: screen;
+  }
+  @keyframes flashPulse {
+    0% { opacity: 0; transform: scale(1); }
+    20% { opacity: 1; transform: scale(1.02); }
+    100% { opacity: 0; transform: scale(1.05); }
+  }
+
+  /* Expanding neon ring */
+  .lvl-ring {
+    position: absolute; left:50%; top:50%; transform: translate(-50%,-50%) scale(0.6);
+    width: 120px; height: 120px; border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.12);
+    box-shadow: 0 0 40px rgba(255,200,0,0.25), inset 0 0 30px rgba(0,255,200,0.06);
+    opacity: 0;
+    animation: ringExpand 850ms cubic-bezier(.16,.99,.37,1) forwards;
+  }
+  @keyframes ringExpand {
+    0% { transform: translate(-50%,-50%) scale(0.6); opacity: 1; filter: blur(0px); }
+    60% { transform: translate(-50%,-50%) scale(2.2); opacity: 1; filter: blur(0px); }
+    100% { transform: translate(-50%,-50%) scale(3.8); opacity: 0; filter: blur(18px); }
+  }
+
+  /* Big level pop */
+  .lvl-big {
+    position: absolute; left:50%; top:48%; transform: translate(-50%,-50%) scale(0.6);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5.4rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 24px rgba(255,240,160,0.9), 0 0 40px rgba(255,160,0,0.6);
+    opacity: 0;
+    animation: bigPop 1000ms cubic-bezier(.16,.99,.37,1) forwards;
+    pointer-events: none;
+  }
+  @keyframes bigPop {
+    0% { transform: translate(-50%,-50%) scale(0.6); opacity: 0; filter: blur(6px); }
+    30% { transform: translate(-50%,-50%) scale(1.12); opacity: 1; filter: blur(0px); }
+    70% { transform: translate(-50%,-50%) scale(1.02); opacity: 1; }
+    100% { transform: translate(-50%,-50%) scale(1); opacity: 0; filter: blur(8px); }
+  }
+
+  /* Aura around name */
+  .display-name.aura {
+    animation: nameAura 1600ms ease-out both;
+  }
+  @keyframes nameAura {
+    0% { transform: scale(1); text-shadow: 0 0 20px #facc15, 0 0 40px #ffec99, 0 0 60px #fbbf24; filter: brightness(1); }
+    20% { transform: scale(1.12); text-shadow: 0 0 40px #fff3b3, 0 0 80px #fff7d0, 0 0 120px #fbbf24; filter: brightness(1.2); }
+    60% { transform: scale(1.06); }
+    100% { transform: scale(1); filter: brightness(1); }
+  }
+
+  /* Particle */
+  .lvl-particle {
+    position: absolute;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    opacity: 0.95;
+    transform: translate(-50%,-50%) scale(1);
+    will-change: transform, opacity;
+    box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  }
+
+  /* small numeric pulse over level indicator */
+  .level-indicator.pulse {
+    animation: indicatorPulse 900ms cubic-bezier(.16,.99,.37,1);
+  }
+  @keyframes indicatorPulse {
+    0% { transform: translateY(-50%) scale(1); text-shadow: 0 0 8px #fff; }
+    40% { transform: translateY(-50%) scale(1.26); text-shadow: 0 0 18px #fff; }
+    100% { transform: translateY(-50%) scale(1); text-shadow: 0 0 8px #fff; }
+  }
+
+  /* confetti fallback shards */
+  .shard {
+    position:absolute;
+    width:6px; height:12px;
+    opacity:0.95;
+    transform-origin:center;
+  }
+
+  /* little bounce for xp bar when level up */
+  .xp-bar.bounce {
+    animation: xpBounce 700ms ease;
+  }
+  @keyframes xpBounce {
+    0% { transform: scaleX(1); }
+    30% { transform: scaleX(1.03); }
+    100% { transform: scaleX(1); }
+  }
+
+  /* small shadow glow behind the overlay center to emphasize */
+  .center-glow {
+    position: absolute;
+    left:50%; top:50%; transform: translate(-50%,-50%);
+    width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(255,220,140,0.06), transparent 35%);
+    filter: blur(80px);
+    opacity: 0;
+    animation: glowShow 950ms ease forwards;
+  }
+  @keyframes glowShow {
+    0% { opacity: 0; transform: translate(-50%,-50%) scale(0.9); }
+    40% { opacity: 1; transform: translate(-50%,-50%) scale(1.06); }
+    100% { opacity: 0; transform: translate(-50%,-50%) scale(1.16); }
+  }
+
+  /* floating pop used by tasks */
+  .float-pop {
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: white;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+    will-change: transform, opacity, top, left;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  .float-xp { background: linear-gradient(90deg,#f59e0b,#fbbf24); box-shadow: 0 8px 30px rgba(245,158,11,0.28); }
+  .float-stat { background: linear-gradient(90deg,#00ffc3,#7dd3fc); box-shadow: 0 8px 30px rgba(0,255,195,0.12); }
+
+</style>
+</head>
+<body>
+<video id="bgVideo" autoplay muted loop>
+  <source src="background.mp4" type="video/mp4">
+</video>
+<div id="overlay"></div>
+
+<header>
+  <h1>🚀 SOLO LEVELING UP</h1>
+  <p>Discipline = Freedom. Stay consistent. Build yourself.</p>
+</header>
+
+<div class="container">
+  <!-- Left: Stats -->
+  <div class="stats-column">
+    <div class="display-name" id="displayName">Dinuka Shehan</div>
+
+    <h2>🎯 XP PROGRESS</h2>
+    <div class="info">
+      <div class="stat-pill"><div class="stat-label">Global Level</div><div id="level">1</div></div>
+      <div class="stat-pill"><div class="stat-label">XP</div><div id="xp">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Needed</div><div id="xpNeeded">80</div></div>
+      <div class="stat-pill"><div class="stat-label">Progress</div><div id="percent">0%</div></div>
+      <div class="stat-pill" style="grid-column:1/-1;"><div class="stat-label">Total XP</div><div id="totalXp">0</div></div>
+      <div class="rank-display" id="rankDisplay">Rank: E-</div>
+      <div class="next-rank" id="nextRankDisplay">Next Rank in: 3 Levels</div>
+    </div>
+    <div class="xp-bar-container"><div class="xp-bar" id="xpBar"></div><div class="level-indicator" id="levelIndicator">1</div></div>
+
+    <h2>🧠 MENTAL STATS</h2>
+    <div class="info">
+      <div class="stat-pill"><div class="stat-label">Intelligence</div><div id="intelligence">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Clarity</div><div id="clarity">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Focus</div><div id="focus">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Motivation</div><div id="motivation">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Confidence</div><div id="confidence">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Will Power</div><div id="willPower">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Discipline</div><div id="discipline">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Mental Level</div><div id="mentalLevel">1</div></div>
+      <div class="rank-display" id="mentalRankDisplay">Rank: E-</div>
+    </div>
+
+    <h2>💪 PHYSICAL STATS</h2>
+    <div class="info">
+      <div class="stat-pill"><div class="stat-label">Strength</div><div id="strength">0</div></div>
+      <div class="stat-pill"><div class="stat-label">Physical Level</div><div id="physicalLevel">1</div></div>
+      <div class="rank-display" id="physicalRankDisplay">Rank: E-</div>
+    </div>
+  </div>
+
+  <!-- Right: Tasks -->
+  <div class="tasks-column">
+    <h2>📘 STUDY & ACADEMIC</h2>
+    <div class="task-section">
+      <div class="task" onclick="addXPAndStats(20, {intelligence:1, focus:2, motivation:1, confidence:1}, this)">✅ 1 Pomodoro <span>+20 XP</span></div>
+      <div class="task" onclick="addXPAndStats(25, {intelligence:2, focus:3, motivation:2, confidence:2}, this)">🔥 After 8 Pomodoros <span>+25 XP</span></div>
+      <div class="task" onclick="addXPAndStats(20, {intelligence:2, clarity:2, focus:1, confidence:1}, this)">🧠 Bio Essay <span>+20 XP</span></div>
+    </div>
+
+    <h2>💪 LIFESTYLE & DISCIPLINE</h2>
+    <div class="task-section">
+      <div class="task" onclick="addXPAndStats(30, {discipline:3, willPower:2, confidence:1}, this)">🚫 No Fap <span>+30 XP</span></div>
+      <div class="task" onclick="addXPAndStats(50, {discipline:4, focus:3, motivation:2, confidence:2}, this)">📵 No Distractions <span>+50 XP</span></div>
+      <div class="task" onclick="addXPAndStats(5, {discipline:1, willPower:1, confidence:1}, this)">❄ Cold Shower <span>+5 XP</span></div>
+    </div>
+
+    <h2>🧘 MENTAL STRENGTH</h2>
+    <div class="task-section">
+      <div class="task" onclick="addXPAndStats(10, {focus:2, clarity:2, motivation:1, confidence:1}, this)">🧘 Meditation <span>+10 XP</span></div>
+      <div class="task" onclick="addXPAndStats(5, {clarity:2, discipline:1, confidence:1}, this)">📅 Day Plan <span>+5 XP</span></div>
+    </div>
+
+    <h2>🏋 FITNESS</h2>
+    <div class="task-section">
+      <div class="task" onclick="addXPAndStats(30, {strength:3, willPower:2, focus:1, confidence:1}, this)">🏃 Workout <span>+30 XP</span></div>
+      <div class="task" onclick="addXPAndStats(50, {strength:5, willPower:3, focus:2, motivation:2, confidence:2}, this)">🔥 Intense Workout <span>+50 XP</span></div>
+    </div>
+
+<div style="text-align:center;">
+  <button onclick="undo()">↩ Undo</button>
+  <button onclick="resetAll()">🔄 Reset</button>
+</div>
+
+<div class="footer">💎 Built for self-mastery | SOLO LEVELING 2.0</div>
+
+<audio id="levelupSound" src="levelup.mp3" preload="auto"></audio>
+<audio id="barSound" src="bar.mp3" preload="auto"></audio>
+</div>
+
+<!-- LEVEL UP OVERLAY (combo: flash + wave + aura + particles) -->
+<div id="levelupOverlay" class="levelup-overlay" aria-hidden="true">
+  <div class="lvl-flash" id="lvlFlash"></div>
+  <div class="lvl-ring" id="lvlRing"></div>
+  <div class="center-glow" id="centerGlow"></div>
+  <div class="lvl-big" id="lvlBig">+1</div>
+  <!-- particles appended dynamically -->
+</div>
+
+<script>
+/* ======================
+   Data & load from storage
+   ====================== */
+let level = parseInt(localStorage.getItem("level")) || 1;
+let xp = parseInt(localStorage.getItem("xp")) || 0;
+let totalXp = parseInt(localStorage.getItem("totalXp")) || 0;
+let history = JSON.parse(localStorage.getItem("history")) || [];
+let stats = JSON.parse(localStorage.getItem("stats")) || {intelligence:0,strength:0,clarity:0,focus:0,motivation:0,willPower:0,confidence:0,discipline:0};
+let mentalXP = parseInt(localStorage.getItem("mentalXP")) || 0;
+let physicalXP = parseInt(localStorage.getItem("physicalXP")) || 0;
+let mentalLevel = parseInt(localStorage.getItem("mentalLevel")) || 1;
+let physicalLevel = parseInt(localStorage.getItem("physicalLevel")) || 1;
+
+/* ranks unchanged */
+const ranks = [
+  { min: 1, max: 3, rank: "E-" }, { min: 4, max: 6, rank: "E" }, { min: 7, max: 9, rank: "E+" },
+  { min: 10, max: 13, rank: "D-" }, { min: 14, max: 17, rank: "D" }, { min: 18, max: 22, rank: "D+" },
+  { min: 23, max: 28, rank: "C-" }, { min: 29, max: 34, rank: "C" }, { min: 35, max: 40, rank: "C+" },
+  { min: 41, max: 47, rank: "B-" }, { min: 48, max: 54, rank: "B" }, { min: 55, max: 62, rank: "B+" },
+  { min: 63, max: 70, rank: "A-" }, { min: 71, max: 78, rank: "A" }, { min: 79, max: 87, rank: "A+" },
+  { min: 88, max: 97, rank: "S-" }, { min: 98, max: 108, rank: "S" }, { min: 109, max: 120, rank: "S+" },
+  { min: 121, max: 133, rank: "SS-" }, { min: 134, max: 147, rank: "SS" }, { min: 148, max: 162, rank: "SS+" },
+  { min: 163, max: 178, rank: "SSS-" }, { min: 179, max: 195, rank: "SSS" }, { min: 196, max: 9999, rank: "SSS+" },
+];
+
+function xpNeededForLevel(lv){ return 80 + (lv-1)*8; }
+function mentalXpNeeded(lv){ return 40 + (lv-1)*8; }
+function physicalXpNeeded(lv){
+  if(lv===1) return 1;
+  if(lv===2) return 5;
+  return 4 + lv;
+}
+function getRank(lv){ const found = ranks.find(r=>lv>=r.min&&lv<=r.max); return found?found.rank:"E-"; }
+
+/* ======================
+   Smooth number animation
+   - animateNumber: animates integer numbers
+   - animatePercent: animates percent string (0.0% -> 100.0%)
+   ====================== */
+function animateNumber(id, newValue, duration = 600) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const oldValue = parseInt(el.innerText) || 0;
+  const diff = newValue - oldValue;
+  if (diff === 0) return;
+
+  const start = performance.now();
+  el.classList.add('changed');
+  const frame = (now) => {
+    const t = Math.min((now - start) / duration, 1);
+    // easeOutCubic
+    const ease = 1 - Math.pow(1 - t, 3);
+    const current = Math.floor(oldValue + diff * ease);
+    el.innerText = current;
+    el.style.transform = `scale(${1 + 0.12 * Math.sin(ease * Math.PI)})`;
+    if (t < 1) requestAnimationFrame(frame);
+    else {
+      el.innerText = newValue;
+      el.style.transform = '';
+      // keep glow for a short while then remove
+      setTimeout(()=> el.classList.remove('changed'), 350);
+    }
+  };
+  requestAnimationFrame(frame);
+}
+
+function animatePercent(id, newPct, duration = 600) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  // strip '%' if exists
+  const oldTxt = el.innerText.replace('%','');
+  const old = parseFloat(oldTxt) || 0;
+  const diff = newPct - old;
+  if (Math.abs(diff) < 0.0001) return;
+
+  const start = performance.now();
+  el.classList.add('changed');
+  const frame = (now) => {
+    const t = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - t, 3);
+    const current = old + diff * ease;
+    el.innerText = current.toFixed(1) + '%';
+    if (t < 1) requestAnimationFrame(frame);
+    else {
+      el.innerText = newPct.toFixed(1) + '%';
+      setTimeout(()=> el.classList.remove('changed'), 300);
+    }
+  };
+  requestAnimationFrame(frame);
+}
+
+/* ======================
+   UI update (replaces direct assignments)
+   ====================== */
+function updateUI() {
+  const needed = xpNeededForLevel(level);
+
+  animateNumber("level", level);
+  animateNumber("xp", xp);
+  animateNumber("xpNeeded", needed);
+  animateNumber("totalXp", totalXp);
+  animateNumber("mentalLevel", mentalLevel);
+  animateNumber("physicalLevel", physicalLevel);
+
+  // animate each stat
+  for(let key in stats){
+    if(document.getElementById(key)) animateNumber(key, stats[key]);
+  }
+
+  // percent & xpBar
+  const percent = Math.min((xp / needed) * 100, 100);
+  animatePercent("percent", percent);
+
+  const xpBar = document.getElementById("xpBar");
+  // set width (CSS transition handles smooth fill)
+  xpBar.style.width = percent + "%";
+
+  // level indicator position (smooth via CSS left transition)
+  const levelIndicator = document.getElementById("levelIndicator");
+  levelIndicator.innerText = level;
+  levelIndicator.style.left = percent + "%";
+
+  // ranks
+  document.getElementById("rankDisplay").innerText = "Global Rank: " + getRank(level);
+  document.getElementById("mentalRankDisplay").innerText = "Mental Rank: " + getRank(mentalLevel);
+  document.getElementById("physicalRankDisplay").innerText = "Physical Rank: " + getRank(physicalLevel);
+}
+
+/* ======================
+   Save
+   ====================== */
+function saveData(){
+  localStorage.setItem("level",level);
+  localStorage.setItem("xp",xp);
+  localStorage.setItem("totalXp",totalXp);
+  localStorage.setItem("history",JSON.stringify(history));
+  localStorage.setItem("stats",JSON.stringify(stats));
+  localStorage.setItem("mentalXP",mentalXP);
+  localStorage.setItem("physicalXP",physicalXP);
+  localStorage.setItem("mentalLevel",mentalLevel);
+  localStorage.setItem("physicalLevel",physicalLevel);
+}
+
+/* ======================
+   Visual levelup combo (unchanged)
+   ====================== */
+function triggerLevelUpVisual(newLevel){
+  try {
+    const overlay = document.getElementById('levelupOverlay');
+    const big = document.getElementById('lvlBig');
+    const displayNameEl = document.getElementById('displayName');
+    const xpBar = document.getElementById('xpBar');
+    const levelIndicator = document.getElementById('levelIndicator');
+
+    big.innerText = "LEVEL " + newLevel;
+    overlay.classList.add('active');
+
+    xpBar.classList.add('bounce');
+    levelIndicator.classList.add('pulse');
+
+    displayNameEl.classList.remove('aura');
+    void displayNameEl.offsetWidth;
+    displayNameEl.classList.add('aura');
+
+    const particleCount = 28 + Math.floor(Math.random()*12);
+    const colors = ["#fbbf24","#f59e0b","#00ffc3","#7dd3fc","#ff7ab6","#a78bfa"];
+    for(let i=0;i<particleCount;i++){
+      const p = document.createElement('div');
+      p.className = Math.random() > 0.6 ? 'shard' : 'lvl-particle';
+      const size = 6 + Math.floor(Math.random()*10);
+      p.style.width = size + 'px';
+      p.style.height = (p.className==='shard' ? size*1.6 + 'px' : size + 'px');
+      const color = colors[Math.floor(Math.random()*colors.length)];
+      p.style.background = color;
+      p.style.left = (50 + (Math.random()*180 - 90)) + '%';
+      p.style.top = (50 + (Math.random()*120 - 60)) + '%';
+      p.style.opacity = 0.95;
+      p.style.transform = `translate(-50%,-50%) rotate(${Math.random()*360}deg)`;
+      overlay.appendChild(p);
+
+      const dx = (Math.random()*220 - 110);
+      const dy = (Math.random()*220 - 110);
+      const dur = 900 + Math.random()*900;
+      p.animate([
+        { transform: p.style.transform + ' translate(0px,0px) scale(1)', opacity: 1 },
+        { transform: p.style.transform + ` translate(${dx}px,${dy}px) scale(${0.55+Math.random()*0.9})`, opacity: 0 }
+      ], { duration: dur, easing: 'cubic-bezier(.16,.99,.37,1)' });
+
+      setTimeout(()=>{ try{ p.remove(); }catch(e){} }, 1700 + Math.random()*900);
+    }
+
+    setTimeout(()=>{ overlay.classList.remove('active'); }, 2000);
+    setTimeout(()=>{ xpBar.classList.remove('bounce'); levelIndicator.classList.remove('pulse'); }, 1100);
+  } catch(e) {
+    console.warn("level-up visual failed", e);
+  }
+}
+
+/* ======================
+   Floating pop helpers for task click
+   - creates floating +XP and stat floating pop that animate upward & fade
+   ====================== */
+function createFloatingPop(text, x, y, className='float-xp') {
+  const pop = document.createElement('div');
+  pop.className = 'float-pop ' + (className || 'float-xp');
+  pop.style.left = x + 'px';
+  pop.style.top = y + 'px';
+  pop.innerText = text;
+  document.body.appendChild(pop);
+
+  // animate: rise and fade
+  const dy = 70 + Math.random()*20;
+  pop.animate([
+    { transform: 'translate(-50%, -50%) translateY(0px) scale(1)', opacity: 1 },
+    { transform: `translate(-50%, -50%) translateY(-${dy}px) scale(1.08)`, opacity: 0 }
+  ], { duration: 900 + Math.random()*400, easing: 'cubic-bezier(.16,.99,.37,1)' });
+
+  setTimeout(()=> { try{ pop.remove(); } catch(e){} }, 1400);
+}
+
+/* ======================
+   Main: addXPAndStats
+   - now receives optional clickedElement 'el' to position floating pops
+   - triggers smooth number animations & sounds
+   ====================== */
+function addXPAndStats(amount, statPoints={}, el=null) {
+  history.push({ level,xp,totalXp,stats:{...stats}, mentalXP, physicalXP, mentalLevel, physicalLevel });
+
+  // create floating xp near clicked element
+  try {
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      const cx = rect.left + rect.width/2;
+      const cy = rect.top + rect.height/2;
+      createFloatingPop('+' + amount + ' XP', cx, cy - 8, 'float-xp');
+      // for each stat gained, make a small pop listing stat++ near element (stack them)
+      let offset = 20;
+      for (let key in statPoints) {
+        if (statPoints.hasOwnProperty(key) && statPoints[key] > 0) {
+          createFloatingPop('+' + statPoints[key] + ' ' + key, cx + (Math.random()*40 - 20), cy - offset, 'float-stat');
+          offset += 22;
+        }
+      }
+      // small "button press" micro animation
+      el.animate([{ transform: 'scale(1)' }, { transform: 'scale(0.96)' }, { transform: 'scale(1.02)' }, { transform: 'scale(1)' }], { duration: 320, easing: 'cubic-bezier(.2,.8,.2,1)' });
+    }
+  } catch(e){ console.warn('floating pop failed', e); }
+
+  xp += amount; totalXp += amount;
+  let mentalAdd = 0, physicalAdd = 0;
+  for(let key in statPoints){
+    if(stats.hasOwnProperty(key)){
+      stats[key] += statPoints[key];
+      if(key === "strength") physicalAdd += statPoints[key];
+      else mentalAdd += statPoints[key];
+    }
+  }
+  mentalXP += mentalAdd;
+  physicalXP += physicalAdd;
+
+  // Mental Level Up
+  while(mentalXP >= mentalXpNeeded(mentalLevel)){
+    mentalXP -= mentalXpNeeded(mentalLevel);
+    mentalLevel++;
+    for(let key in stats) if(key!=="strength") stats[key]+=2;
+  }
+
+  // Physical Level Up
+  while(physicalXP >= physicalXpNeeded(physicalLevel)){
+    physicalXP -= physicalXpNeeded(physicalLevel);
+    physicalLevel++;
+    stats["strength"]+=2;
+  }
+
+  // Global Level Up
+  let neededG = xpNeededForLevel(level);
+  let leveled = false;
+  while(xp >= neededG){
+    xp -= neededG;
+    level++;
+    neededG = xpNeededForLevel(level);
+    for(let key in stats) stats[key]+=5;
+    leveled = true;
+    // play audio and visuals (per-level)
+    try {
+      const audio = document.getElementById("levelupSound");
+      audio.currentTime = 0;
+      audio.play().catch(e=>console.log("sound blocked"));
+    } catch(e){}
+    triggerLevelUpVisual(level);
+  }
+
+  // small bar sound on any gain
+  try {
+    const barSound = document.getElementById("barSound");
+    barSound.currentTime = 0;
+    barSound.play().catch(e=>console.log("bar blocked"));
+  } catch(e){}
+
+  // xp bar micro-bounce when xp increases
+  const xpBar = document.getElementById("xpBar");
+  xpBar.classList.add('bounce');
+  setTimeout(()=> xpBar.classList.remove('bounce'), 700);
+
+  updateUI();
+  saveData();
+}
+
+/* ======================
+   Undo & Reset
+   ====================== */
+function undo(){ 
+  if(history.length>0){
+    const prev = history.pop();
+    level = prev.level; xp = prev.xp; totalXp = prev.totalXp; stats = {...prev.stats};
+    mentalXP = prev.mentalXP; physicalXP = prev.physicalXP; mentalLevel = prev.mentalLevel; physicalLevel = prev.physicalLevel;
+    updateUI(); saveData();
+  }
+}
+function resetAll(){ 
+  if(confirm("Reset all progress?")){
+    level=1; xp=0; totalXp=0; history=[]; stats={intelligence:0,strength:0,clarity:0,focus:0,motivation:0,willPower:0,confidence:0,discipline:0};
+    mentalXP=0; physicalXP=0; mentalLevel=1; physicalLevel=1; updateUI(); saveData();
+  } 
+}
+
+/* ======================
+   Init UI on load
+   ====================== */
+updateUI();
+
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BIO PAPERS </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d9f3ff, #fef6e4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 1.05em;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #e0e0e0;
+      padding: 12px 10px;
+      text-align: center;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+
+    th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+      color: #444;
+    }
+
+    tbody tr {
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    tbody tr:hover {
+      background-color: #e8f5e9;
+      transform: scale(1.02);
+    }
+
+    tr.checked {
+      background-color: #d4edda;
+      color: #155724;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>2025 BIOLOGY PAPERS</h1>
+    <table id="provinceTable">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Province</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Western</td></tr>
+        <tr><td>2</td><td>Central</td></tr>
+        <tr><td>3</td><td>Southern</td></tr>
+       
+        <tr><td>4</td><td>North Western</td></tr>
+        <tr><td>5</td><td>Uva</td></tr>
+        <tr><td>6</td><td>Sabaragamuwa</td></tr>
+      </tbody>
+    </table>
+    <footer>✔ Click a province to mark or unmark it — progress is auto-saved!</footer>
+  </div>
+
+  <script>
+    const rows = document.querySelectorAll("#provinceTable tbody tr");
+    const savedProvinces = JSON.parse(localStorage.getItem("checkedProvinces")) || [];
+
+    rows.forEach(row => {
+      const provinceCell = row.cells[1];
+      const provinceName = provinceCell.textContent.trim();
+
+      if (savedProvinces.includes(provinceName)) {
+        provinceCell.innerHTML = provinceName + " ✅";
+        row.classList.add("checked");
+      }
+
+      row.addEventListener("click", () => {
+        if (row.classList.contains("checked")) {
+          provinceCell.innerHTML = provinceName;
+          row.classList.remove("checked");
+          const index = savedProvinces.indexOf(provinceName);
+          if (index > -1) savedProvinces.splice(index, 1);
+        } else {
+          provinceCell.innerHTML = provinceName + " ✅";
+          row.classList.add("checked");
+          savedProvinces.push(provinceName);
+        }
+
+        localStorage.setItem("checkedProvinces", JSON.stringify(savedProvinces));
+      });
+    });
+  </script>
+
+</body>
+</html>
