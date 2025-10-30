@@ -334,6 +334,14 @@
 </video>
 <div id="overlay"></div>
 
+
+<audio id="bg-music" autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+
+ 
+
 <header>
   <h1>🚀 SOLO LEVELING UP</h1>
   <p>Discipline = Freedom. Stay consistent. Build yourself.</p>
@@ -426,6 +434,24 @@
 </div>
 
 <script>
+
+
+
+window.addEventListener('load', () => {
+  const music = document.getElementById('bg-music');
+  music.volume = 0.6; // optional: set lower volume
+  const playPromise = music.play();
+  
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      // Some browsers block autoplay, try again after a short delay
+      setTimeout(() => music.play(), 1000);
+    });
+  }
+})
+
+
+ 
 /* ======================
    Data & load from storage
    ====================== */
@@ -760,6 +786,7 @@ updateUI();
 </script>
 </body>
 </html>
+
 
 
 
