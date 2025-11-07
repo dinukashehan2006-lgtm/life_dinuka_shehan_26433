@@ -733,7 +733,7 @@ function addXPAndStats(amount, statPoints={}, el=null) {
     xp -= neededG;
     level++;
     neededG = xpNeededForLevel(level);
-    for(let key in stats) stats[key]+=1;
+    for(let key in stats) stats[key]+=0;
     leveled = true;
     // play audio and visuals (per-level)
     try {
@@ -786,6 +786,7 @@ updateUI();
 </script>
 </body>
 </html>
+
 
 
 
