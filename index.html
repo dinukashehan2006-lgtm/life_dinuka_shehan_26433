@@ -389,28 +389,28 @@
   <div class="tasks-column">
     <h2>📘 STUDY & ACADEMIC</h2>
     <div class="task-section">
-      <div class="task" onclick="addXPAndStats(20, {intelligence:1, focus:2, motivation:1, confidence:1}, this)">✅ 1 Pomodoro <span>+20 XP</span></div>
-      <div class="task" onclick="addXPAndStats(25, {intelligence:2, focus:3, motivation:2, confidence:2}, this)">🔥 After 8 Pomodoros <span>+25 XP</span></div>
-      <div class="task" onclick="addXPAndStats(20, {intelligence:2, clarity:2, focus:1, confidence:1}, this)">🧠 Bio Essay <span>+20 XP</span></div>
+      <div class="task" onclick="addXPAndStats(20, {intelligence:1, focus:1, motivation:1, confidence:1}, this)">✅ 1 Pomodoro <span>+20 XP</span></div>
+      <div class="task" onclick="addXPAndStats(25, {intelligence:1, focus:1, motivation:2, confidence:1}, this)">🔥 After 8 Pomodoros <span>+25 XP</span></div>
+      <div class="task" onclick="addXPAndStats(20, {intelligence:1, clarity:1, focus:1, confidence:1}, this)">🧠 Bio Essay <span>+20 XP</span></div>
     </div>
 
     <h2>💪 LIFESTYLE & DISCIPLINE</h2>
     <div class="task-section">
-      <div class="task" onclick="addXPAndStats(30, {discipline:3, willPower:2, confidence:1}, this)">🚫 No Fap <span>+30 XP</span></div>
-      <div class="task" onclick="addXPAndStats(50, {discipline:4, focus:3, motivation:2, confidence:2}, this)">📵 No Distractions <span>+50 XP</span></div>
+      <div class="task" onclick="addXPAndStats(30, {discipline:2, willPower:1, confidence:1}, this)">🚫 No Fap <span>+30 XP</span></div>
+      <div class="task" onclick="addXPAndStats(50, {discipline:2, focus:2, motivation:1, confidence:1}, this)">📵 No Distractions <span>+50 XP</span></div>
       <div class="task" onclick="addXPAndStats(5, {discipline:1, willPower:1, confidence:1}, this)">❄ Cold Shower <span>+5 XP</span></div>
     </div>
 
     <h2>🧘 MENTAL STRENGTH</h2>
     <div class="task-section">
       <div class="task" onclick="addXPAndStats(10, {focus:2, clarity:2, motivation:1, confidence:1}, this)">🧘 Meditation <span>+10 XP</span></div>
-      <div class="task" onclick="addXPAndStats(5, {clarity:2, discipline:1, confidence:1}, this)">📅 Day Plan <span>+5 XP</span></div>
+      <div class="task" onclick="addXPAndStats(5, {clarity:1, discipline:1, confidence:1}, this)">📅 Day Plan <span>+5 XP</span></div>
     </div>
 
     <h2>🏋 FITNESS</h2>
     <div class="task-section">
-      <div class="task" onclick="addXPAndStats(30, {strength:3, willPower:2, focus:1, confidence:1}, this)">🏃 Workout <span>+30 XP</span></div>
-      <div class="task" onclick="addXPAndStats(50, {strength:5, willPower:3, focus:2, motivation:2, confidence:2}, this)">🔥 Intense Workout <span>+50 XP</span></div>
+      <div class="task" onclick="addXPAndStats(30, {strength:2, willPower:1, focus:1, confidence:1}, this)">🏃 Workout <span>+30 XP</span></div>
+      <div class="task" onclick="addXPAndStats(50, {strength:3, willPower:1, focus:1, motivation:1, confidence:1}, this)">🔥 Intense Workout <span>+50 XP</span></div>
     </div>
 
 <div style="text-align:center;">
@@ -716,14 +716,14 @@ function addXPAndStats(amount, statPoints={}, el=null) {
   while(mentalXP >= mentalXpNeeded(mentalLevel)){
     mentalXP -= mentalXpNeeded(mentalLevel);
     mentalLevel++;
-    for(let key in stats) if(key!=="strength") stats[key]+=2;
+    for(let key in stats) if(key!=="strength") stats[key]+0;
   }
 
   // Physical Level Up
   while(physicalXP >= physicalXpNeeded(physicalLevel)){
     physicalXP -= physicalXpNeeded(physicalLevel);
     physicalLevel++;
-    stats["strength"]+=2;
+    stats["strength"]+=0;
   }
 
   // Global Level Up
@@ -733,7 +733,7 @@ function addXPAndStats(amount, statPoints={}, el=null) {
     xp -= neededG;
     level++;
     neededG = xpNeededForLevel(level);
-    for(let key in stats) stats[key]+=5;
+    for(let key in stats) stats[key]+=1;
     leveled = true;
     // play audio and visuals (per-level)
     try {
@@ -786,6 +786,7 @@ updateUI();
 </script>
 </body>
 </html>
+
 
 
 
